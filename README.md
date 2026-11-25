@@ -112,6 +112,7 @@ If this project saved you time, a star helps other people find it.
 ## Credits
 
 - [OpenCode](https://opencode.ai/) — contributor and development harness. This skill was written, updated and published with OpenCode.
+- Big Pickle — contributor. The model that researched, wrote and published these skill updates.
 
 ## License
 
