@@ -1,0 +1,26 @@
+name: Check skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Syntax-check both auto_voice helpers
+        run: |
+          python -m py_compile opencode/skills/ai-content-creator/scripts/auto_voice.py
+          python -m py_compile claude/skills/ai-content-creator/scripts/auto_voice.py
+      - name: Check required files
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f docs/demo.gif
+          test -f opencode/skills/ai-content-creator/SKILL.md
+          test -f claude/skills/ai-content-creator/SKILL.md
