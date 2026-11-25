@@ -2,6 +2,8 @@
 
 A viral-topic → script → voiceover → finished vertical video pipeline, packaged as a skill for **OpenCode** and **Claude Code**.
 
+**Repository:** https://github.com/ashiqurrahmananik/ai-content-creator-skill
+
 It researches YouTube Shorts and Facebook Reels trends, returns ten ranked topics with **direct YouTube Shorts links**, writes an original tagged script, generates or intakes the voiceover, and hands a prepared project to a film engine. It never copies a viral video's characters, shots, captions, sounds or edits.
 
 ## What is included
