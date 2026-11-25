@@ -1,6 +1,6 @@
 ---
 name: ai-content-creator
-description: Research viral YouTube Shorts and Facebook Reels topics, recommend one, write an original tagged script, generate or intake the voiceover, then hand the project to a film engine to produce a finished vertical video. Use for viral topic research, Shorts scripts, voiceover generation, or end-to-end short-video production.
+description: Research viral topics across YouTube Shorts, Facebook/Instagram Reels, TikTok and broader short-video charts with an animation/explainer-first filter, reject photorealistic AI-human trends for cartoon projects, recommend one, write an original tagged script, generate or intake the voiceover, then hand the project to a film engine to produce a finished vertical video. Use for viral topic research, Shorts scripts, voiceover generation, or end-to-end short-video production.
 license: MIT
 compatibility: Claude Code with WebSearch, WebFetch, Bash, file tools, and one film-engine skill (lemo-opuscar or cartoon-audio-short). Python 3.11+, ffmpeg and ffprobe required for auto voice.
 allowed-tools: WebSearch WebFetch Bash Read Write Edit Glob Grep AskUserQuestion Skill
@@ -36,6 +36,9 @@ Relative paths in this skill are relative to the directory containing this `SKIL
 - Research is evidence, not a shot list. Never copy a viral video's characters, shots, captions, sounds or edits. Write an original story with original characters.
 - No real, named living people as characters or jokes; no brand mascots or logos; nothing graphic or political. Abstract a real person or brand into an original everyman.
 - Every number has a source and a date. Label third-party trackers and AI-written summaries; never present a viral legend as verified fact.
+- Search all short-form video, not just Reels: YouTube Shorts, Facebook/Instagram Reels, TikTok/cross-platform and animation/explainer sources. Reels-only evidence is not enough.
+- Format is part of the evidence. Label every candidate `animation`, `explainer`, `physical gag`, `family/animal`, `gaming`, `music/dance`, or `AI-human-like`. Judge the pixels: a photorealistic human is `AI-human-like`, never animation or explainer, even if a tracker says otherwise.
+- Animation-first ranking, not view-count ranking. In `Cartoon-ready`, at least six of ten topics must be animation/explainer or a cartoon-survivable gag/family-animal story; AI-human-like goes in the dropped note. In `All videos`, cap AI-human-like at two. If the animation pool is thin, widen the queries and re-run rather than backfilling.
 - Every research report includes direct `https://www.youtube.com/shorts/<video-id>` links, never tracker or roundup pages as the video link. Trackers supply numbers and IDs. If a link is built from an ID in a dated tracker snapshot, say so. Never invent an ID or view count.
 - Research scope is a user choice: `Cartoon-ready` (default) or `All videos`. Offer it at intake and honour `cartoon` / `all` after the report with a new dated file.
 - Never edit, re-time, duck or compress a user-supplied voice. Music and SFX sit at 50% of the voice level. No captions unless the user asks or approves a contact sheet that shows them.
@@ -58,16 +61,16 @@ Then, if voice source is not already stated:
 
 5. **Voice source?** — `Auto — ElevenLabs if a key is set, else free built-in Kokoro` (recommended) / `I'll record it` / `Force Kokoro` / `Force ElevenLabs`.
 
-`Cartoon-ready` keeps physical gags, family/animal/machine stories and clean reversals that original characters can tell in 20–30 s. `All videos` also keeps gaming, real-person and IP-driven patterns, still rewritten with original characters at script time. Use the language the user writes in by default. If they picked a topic, jump to Stage 2. If they pointed at an old list, read it and go to Stage 2.
+`Cartoon-ready` keeps animation/explainer-native hits, physical gags, family/animal/machine stories and clean reversals that original characters can tell in 20–30 s. Photorealistic AI-human clips are not animation or explainer; keep them only when retold with original cartoon characters. `All videos` also keeps gaming, real-person and IP-driven patterns, still rewritten with original characters at script time. Use the language the user writes in by default. If they picked a topic, jump to Stage 2. If they pointed at an old list, read it and go to Stage 2.
 
 ## Stage 1 — Research
 
 1. Use the current date in every query. Run several `WebSearch` calls together, then follow the best 2–4 results with `WebFetch` for numbers, IDs and direct Shorts URLs. Do not use a direct YouTube text fetch for counts — it returns only a footer.
-2. Cover both platforms: at least one YouTube Shorts velocity query, one Facebook Reels query, one format/hashtag query. Facebook pages are usually login-walled; use public roundups and say so.
+2. Cover all short-form sources: a YouTube Shorts velocity query, a Facebook/Instagram Reels query, a TikTok/cross-platform query, a hashtag/format query, at least two animation/explainer-specific queries, and one AI-human detection query used only to identify clips to exclude. Facebook pages are usually login-walled; use public roundups and say so. Reels-only evidence is not enough.
 3. Turn videos into *topics/patterns*, not single creators' clips.
-4. Apply the chosen scope; drop anything needing a real person, brand mascot, logo, politics or graphic content.
+4. Classify each hit by format (see `references/research.md`); photorealistic AI footage is `AI-human-like` even if a tracker calls it animation. Apply the scope and run the format mix check before scoring: Cartoon-ready needs 6/10 animation-friendly and 0 AI-human-like; All videos needs 3/10 animation-friendly and at most 2 AI-human-like. If the check fails, widen the animation queries and re-run. Drop anything needing a real person, brand mascot, logo, politics or graphic content.
 5. Score each candidate 0–10: momentum 40%, adaptability 30%, safety/originality 20%, cross-platform presence 10%.
-6. Reply with exactly **ten ranked topics** in one message, prefixed by one method/date/**scope** line. Each entry: rank and title, hook line, evidence (number + source + date), one or more direct Shorts links with source/date labels, why it travels, safe original angle, recommended engine + lemo style family, score. End with **"My pick: #N"** and a two-sentence reason, then: **"Reply with a number, 'more', 'cartoon', or 'all'."**
+6. Reply with exactly **ten ranked topics** in one message, prefixed by one method/date/**scope** line. Each entry: rank and title, hook line, evidence (number + source + date), one or more direct Shorts links with source/date labels, `Format:`, `Platforms:`, why it travels, safe original angle, recommended engine + lemo style family, score. Enforce the format mix from step 4 before finalising; do not backfill with realistic AI clips. End with **"My pick: #N"** and a two-sentence reason, then: **"Reply with a number, 'more', 'cartoon', or 'all'."**
 7. Save the report to `~/shorts/research/trends-YYYY-MM-DD.md` using `templates/trend-report.md`. A scope change creates a new dated file, never an overwrite.
 
 Never invent view counts. With no public count, write "no public count" and keep the topic only if two sources attest the pattern.
@@ -115,4 +118,5 @@ After handoff, stop orchestrating. Follow the loaded engine's rules, including i
 
 - Engine kit missing: read the cartoon skill's `references/engine-gotchas.md`, section "Rebuilding the kit", before asking the user anything.
 - Trend sources empty or contradictory: say so, show what you found, and let the user choose or supply a topic.
+- Animation/explainer pool too thin: run the full animation query bank in `references/research.md` with broader wording instead of filling the ten with photorealistic AI clips.
 - User rejects all ten: ask for a niche/region and rerun Stage 1 with narrower queries. Keep old reports.

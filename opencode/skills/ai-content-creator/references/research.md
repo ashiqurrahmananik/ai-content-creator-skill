@@ -26,6 +26,30 @@ Cross-platform and format patterns:
 - `TikTok and YouTube Shorts trends this week <date>`
 - `viral short video formats <date> ranked list relatable split challenge`
 - `trending hashtags short videos <date> views growth`
+- `TikTok Creative Center trending videos <date>`
+
+Animation and explainer queries — run **at least two** of these on every research pass, in addition to the platform queries above. They exist because generic "viral shorts" searches are dominated by realistic AI-human clips:
+
+- `animated cartoon YouTube Shorts trending <date> views`
+- `viral animation shorts <date> most viewed cartoon clip`
+- `2D animation short video trend <date> views`
+- `explainer animation viral short video <date>`
+- `motion graphics explainer shorts trending <date>`
+- `stop motion short viral <date> YouTube Shorts`
+- `animated explainer TikTok trend <date> views`
+- `viral animated short film roundup <date>`
+- `animation short video chart <date> views growth`
+
+AI-human detection query — run once, **only** to identify what must be excluded:
+
+- `AI generated realistic human short video trend <date>` (results are candidates for the dropped note, never for the ranked animation list)
+
+## Format mix check (mandatory before scoring)
+
+1. Assign every candidate one format: `animation`, `explainer`, `physical gag`, `family/animal`, `gaming`, `music/dance`, or `AI-human-like`. Judge the pixels, not the label: a photorealistic human is `AI-human-like` even if a tracker or AI trend card calls it "animation".
+2. `Cartoon-ready`: at least **6 of 10** ranked topics must be `animation`, `explainer`, or a `physical gag`/`family/animal` story that works with original cartoon characters; `AI-human-like` count must be **0** unless the joke survives as an original cartoon gag (then still cap at 1).
+3. `All videos`: at most **2 of 10** may be `AI-human-like`, each with an explicit original-cartoon angle; still include at least **3** `animation`/`explainer` topics.
+4. If the check fails, widen the animation/explainer queries (new platform, new format wording, broader date range) and re-run research. Never backfill the list with realistic AI clips just because they have high views. Record the final mix in the report and list excluded AI-human clips under "Dropped for rights/safety/AI-human-likeness".
 
 ## Research scope (asked at intake)
 
@@ -66,4 +90,4 @@ Score = round(0.4·momentum + 0.3·adaptability + 0.2·safety + 0.1·cross-platf
 
 ## Report rules
 
-One reply, exactly ten numbered topics, no commentary before the list other than one line of method/date/**scope**. Each entry: title (5–8 words), hook line, evidence (number + source + date), **YouTube links (one or more direct `youtube.com/shorts/<ID>` URLs, source/date labelled)**, why it travels, original angle, engine + style family, score. Then "My pick: #N" and the ask: "Reply with a number, 'more', 'cartoon', or 'all'." Save the same list with `templates/trend-report.md`.
+One reply, exactly ten numbered topics, no commentary before the list other than one line of method/date/**scope** stating that animation/explainer sources were searched and AI-human-like clips were filtered. Each entry: title (5–8 words), hook line, evidence (number + source + date), **YouTube links (one or more direct `youtube.com/shorts/<ID>` URLs, source/date labelled)**, `Format:`, `Platforms:`, why it travels, original angle, engine + style family, score. Then "My pick: #N" and the ask: "Reply with a number, 'more', 'cartoon', or 'all'." Save the same list with `templates/trend-report.md`, including its format-mix line and dropped-AI-human note.

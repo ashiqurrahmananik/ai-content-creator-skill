@@ -9,7 +9,7 @@
 
 ![10-second demo](docs/demo.gif)
 
-This skill researches YouTube Shorts and Facebook Reels trends, returns ten ranked topics with **direct YouTube Shorts links**, writes an original tagged script, generates or intakes the voiceover, and hands a prepared project to a film engine. It never copies a viral video's characters, shots, captions, sounds or edits.
+This skill researches YouTube Shorts, Facebook/Instagram Reels, TikTok and animation/explainer charts with an **animation-first filter** (photorealistic AI-human clips are excluded), returns ten ranked topics with **direct YouTube Shorts links**, writes an original tagged script, generates or intakes the voiceover, and hands a prepared project to a film engine. It never copies a viral video's characters, shots, captions, sounds or edits.
 
 Repository: https://github.com/ashiqurrahmananik/ai-content-creator-skill
 
@@ -19,7 +19,7 @@ Most "AI video" prompts stop at a script. This one carries the whole baton:
 
 | Stage | What you get |
 |---|---|
-| Research | Ten scored topics with dated sources and direct `youtube.com/shorts/<ID>` links |
+| Research | Ten scored topics with dated sources and direct `youtube.com/shorts/<ID>` links; animation/explainer-first mix check filters out AI-human clips |
 | Script | Three files: clean text, ElevenLabs `[ ]` tags, and `[[[ ]]]` director notes |
 | Voice | User recording, or auto TTS — ElevenLabs when a key exists, otherwise free offline Kokoro |
 | Dialogue | Narrator voice plus mapped character voices for quoted speech |
