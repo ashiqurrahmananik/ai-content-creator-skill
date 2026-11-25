@@ -109,6 +109,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) and [ROADMAP.md](ROADMAP.md). Issues mark
 
 If this project saved you time, a star helps other people find it.
 
+## Credits
+
+- [OpenCode](https://opencode.ai/) — contributor and development harness. This skill was written, updated and published with OpenCode.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
