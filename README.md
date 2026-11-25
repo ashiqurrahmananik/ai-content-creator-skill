@@ -109,7 +109,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) and [ROADMAP.md](ROADMAP.md). Issues mark
 
 If this project saved you time, a star helps other people find it.
 
-## Credits
+## Contributors
 
 - <a href="https://opencode.ai"><img src="https://opencode.ai/brand/files/opencode-logo-dark.svg" alt="OpenCode" width="22" height="28"></a> OpenCode — contributor and development harness. This skill was written, updated and published with OpenCode.
 - ![Big Pickle contributor](https://img.shields.io/badge/Big%20Pickle-contributor-7CB342?style=flat-square) Big Pickle — the model that researched, wrote and published these skill updates.
