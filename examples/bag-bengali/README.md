@@ -1,5 +1,9 @@
 # Example: ব্যাগ (Bag)
 
+![Autoplay preview](preview.gif)
+
+*Autoplay preview — 8 seconds, 8 fps. Full film: [`ব্যাগ.mp4`](ব্যাগ.mp4).*
+
 A finished example film included as a showcase binary. It is force-added with `git add -f` because the repository `.gitignore` excludes `*.mp4`. The original Bengali filename, `ব্যাগ.mp4` ("bag"), is preserved; the ASCII folder slug keeps the URL simple.
 
 | Item | Value |

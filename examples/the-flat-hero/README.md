@@ -1,5 +1,9 @@
 # Example: The Flat Hero
 
+![Autoplay preview](preview.gif)
+
+*Autoplay preview — 8 seconds, 8 fps. Full film: [`the-flat-hero.mp4`](the-flat-hero.mp4).*
+
 A finished example film included as a showcase binary. It is force-added with `git add -f` because the repository `.gitignore` excludes `*.mp4`.
 
 | Item | Value |

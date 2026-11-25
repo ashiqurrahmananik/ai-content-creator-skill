@@ -1,5 +1,9 @@
 # Example: The Stick of Destiny
 
+![Autoplay preview](preview.gif)
+
+*Autoplay preview — 8 seconds, 8 fps. Full film: [`the-stick-of-destiny.mp4`](the-stick-of-destiny.mp4).*
+
 A finished example film included as a showcase binary. It is force-added with `git add -f` because the repository `.gitignore` excludes `*.mp4`.
 
 | Item | Value |

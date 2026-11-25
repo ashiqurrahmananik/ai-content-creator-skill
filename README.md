@@ -81,6 +81,22 @@ The API key is read from the environment only. It is never written into a script
 - **Voice integrity:** a user-supplied recording is never re-timed, ducked, pitched or compressed. Music/SFX sit at 50% of the voice level.
 - **Engine-agnostic handoff:** the audio and script work with either cartoon or lemo; the engine is chosen by need, not by who made the audio.
 
+## Example films
+
+Animated previews play inline in GitHub Markdown, the same way the demo at the top of this README does. Each link opens the full film and its README.
+
+**The Flat Hero** — 45 s, 1920 × 1080, 60 fps · [README](examples/the-flat-hero/)
+
+![The Flat Hero preview](examples/the-flat-hero/preview.gif)
+
+**The Stick of Destiny** — 50 s, 1920 × 1080, 24 fps · [README](examples/the-stick-of-destiny/)
+
+![The Stick of Destiny preview](examples/the-stick-of-destiny/preview.gif)
+
+**ব্যাগ (Bag)** — 60 s, 1080 × 1920, 30 fps · [README](examples/bag-bengali/)
+
+![ব্যাগ preview](examples/bag-bengali/preview.gif)
+
 ## Repo layout
 
 ```text
