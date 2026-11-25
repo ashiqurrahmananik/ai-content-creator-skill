@@ -112,6 +112,7 @@ If this project saved you time, a star helps other people find it.
 ## Contributors
 
 - <a href="https://opencode.ai"><img src="docs/opencode-logo-dark.svg" alt="OpenCode" width="22" height="28"></a> OpenCode — contributor and development harness. This skill was written, updated and published with OpenCode.
+- <a href="https://claude.ai"><img src="docs/claude-logo.svg" alt="Claude" width="64" height="14"></a> Claude — contributor. The Claude Code edition of this skill is built for Claude Code.
 - ![Big Pickle contributor](https://img.shields.io/badge/Big%20Pickle-contributor-7CB342?style=flat-square) Big Pickle — the model that researched, wrote and published these skill updates.
 
 ## License
