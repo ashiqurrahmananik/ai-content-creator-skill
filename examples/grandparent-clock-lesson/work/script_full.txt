@@ -1,0 +1,40 @@
+[[[CHARACTER — Ivo, the grandfather: original character, early seventies, warm and patient, silver eyebrows, rolled sleeves, fixes anything with a butter knife. Moves slowly, watches more than he speaks. Voice: low, calm, amused.]]]
+[[[CHARACTER — Jun, the narrator and grandson: original character, nine years old, curious and impatient, copies every adult move with total seriousness, frustration turning to delight. Voice: bright and quick, then hushed at the reveal.]]]
+[[[CHARACTER — Pell, minor cameo: Ivo's old friend, practical and dry, enters once with a broken fan, whispers one line and backs out. Keep her in the background, no close-up.]]]
+[[[PROP — the stopped clock: brass, hands frozen at four twelve, the joke object that never works.]]]
+[[[PROP — the pocket watch: a second, identical ticking clock hidden in Ivo's coat pocket from the start. The payoff object.]]]
+[[[SETTING — a sunlit home workshop in summer: wooden workbench, dust in the light, old metal, a radio playing one song. No real place, brand or logo.]]]
+[[[NOTE — single square brackets are ElevenLabs emotion tags for speech. Triple square brackets are production notes and must be stripped before sending text to ElevenLabs; work/script_elevenlabs.txt is the clean tagged version.]]]
+
+[warm, amused] My grandfather fixed everything with a butter knife.
+[amused] The toaster. The garden gate. The radio that only played one song.
+[nostalgic] People left him broken things and came back with working things, and he never once used a proper tool.
+[soft] One summer, he put a stopped clock on the workbench and said, "Copy me."
+[curious] I was nine. I thought this would be easy.
+[deadpan] He tapped the back. I tapped the back.
+[amused] He squinted into the gears. I squinted so hard my cheeks hurt.
+[playful] He turned the clock upside down. I turned it upside down.
+[curious] He frowned at it. I frowned back. He nodded, as if I had said something clever.
+[focused] Then he did the strange part. He closed his eyes, held the clock against his ear, and tapped one spot no bigger than a fingernail.
+[determined] I copied him. Nothing. He did it again. I did it again. Still nothing.
+[stern, gentle] "Again," he said.
+[frustrated] "I can't hear anything," I said.
+[gentle] "Again," he said.
+[quiet] So we did it again. Tap. Listen. Tap. Listen.
+[observant] The workshop smelled of dust and warm metal. Outside, the whole street was making summer noise — bikes, sprinklers, somebody's radio.
+[hushed] Inside, there was only that small silence between us, and my grandfather's breathing.
+[amused] His old friend Pell came in with a broken fan, saw our faces, and stopped in the doorway. "Lesson in progress," she whispered, and backed out again.
+[quiet] By the fourth try, my hand knew where to go before my brain did. Tap. Listen. Tap.
+[curious] The clock still didn't move. But I had started to hear things I had never noticed: the pipe in the wall, a fly at the window, his sleeve brushing the bench.
+[soft wonder] The workshop was full of sounds. I just had to stop making my own.
+[resolute] I wanted to say it was stupid. I wanted to say the clock was broken and we should get a screwdriver.
+[hesitant] But every time I opened my mouth, he tapped that spot again, so I closed it.
+[whispers] Then he leaned close and whispered, "Now close your eyes."
+[hushed] I closed them. At first there was nothing at all.
+[surprised] Then, from somewhere in the dark, a tiny tick.
+[quiet wonder] Not the clock in my hands. Something smaller, further away, steady as a heartbeat.
+[surprised] I opened my eyes so fast the bench seemed to jump.
+[realization] The clock in my hands was still stopped at four twelve. Still as a stone. The tick was coming from his pocket.
+[soft laugh] He was holding a second clock. He had been listening to it the whole time.
+[warm, proud] I stared at him. He shrugged, like I was the one who had missed something obvious.
+[warm, proud] "You were listening," he said. "That's the whole job."

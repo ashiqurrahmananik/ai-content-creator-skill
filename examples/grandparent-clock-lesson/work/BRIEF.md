@@ -1,0 +1,24 @@
+# Production brief
+
+- Slug: grandparent-clock-lesson
+- Selected topic: #1 "Grandparent Passes Down a Trade" from the dated report
+- Report: ~/shorts/research/trends-2026-11-25.md
+- Sources: ScrollSonar weekly Shorts chart, updated 2026-11-23 ("Teaching the next generation how to fix cars!" 24M views, 8M/day); TRYIT worldwide Shorts chart, 2026-11-24 ("He copied Grandpa's every move…" 47.7M views, +20.7M gained recently).
+- Original angle: An original old inventor and a kid work on a dead clock. The kid copies every move — tap, squint, upside down — until the grandfather asks for eyes closed. The tick turns out to come from his pocket: the real skill was listening. No real person, brand, or copied shot.
+- Engine: lemo-opuscar; alternative cartoon-audio-short (it caps at 60 s, so it cannot cover the sub-3-minute target).
+- Style (lemo only): Paper Pop-up Book (`paper-popup`) — flat cut-paper actors in a warm, lamp-lit pop-up workshop diorama. Alternative: `watercolor`.
+- Language: English (global audience).
+- Length: 145.01 s of generated audio (2:25); user's requirement was under 3 minutes.
+- Voice source: auto-generated with free offline Kokoro (no ELEVENLABS_API_KEY on this machine); preview approved by user.
+- Voiceover: ~/shorts/grandparent-clock-lesson/voice.mp3 (also voice.wav); generated 2026-11-25.
+- Voice cast: ~/shorts/grandparent-clock-lesson/work\voices.json (narrator JUN / af_bella; dialogue IVO / bm_george, JUN / af_bella, PELL / bf_emma).
+- Real audio duration: 145.01 s from work/voice_duration.json (about 2:25, under the 3-minute limit).
+- Script (clean, for timing): ~/shorts/grandparent-clock-lesson/work\script.txt
+- Script (ElevenLabs, `[ ]` tags only): ~/shorts/grandparent-clock-lesson/work\script_elevenlabs.txt
+- Script (annotated, `[[[ ]]]` notes + tags): ~/shorts/grandparent-clock-lesson/work\script_full.txt
+- Cast: IVO (grandfather), JUN (grandson/narrator), PELL (cameo)
+- Captions: burned-in English subtitles shown on the approved contact sheet (2026-11-25) and exported as film/subtitles_en.srt; remove on request if the user wants none.
+- Film assets: film/timeline.json, film/mix.wav (voice unchanged + bed at 50 % RMS), film/contact_sheet.jpg, film/out/video.mp4 (silent picture before master).
+- Final master: ~/shorts/grandparent-clock-lesson/the-whole-job.mp4 — 1080×1920, 30 fps, 145.60 s, H.264/AAC, −14.4 LUFS, peak −1.5 dBFS. Delivered 2026-11-25.
+- Constraints: no real named people, no brand mascots/logos, no politics, no graphic content, voice never edited or re-timed, music/SFX at 50 % of voice.
+- User decisions: emotion-tagged ElevenLabs draft requested; engine left to recommendation.

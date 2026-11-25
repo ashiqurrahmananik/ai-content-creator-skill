@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.mp3
+*.wav
+*.mp4
+*.mov
+*.jpg
+*.jpeg
+*.png
+.DS_Store
+Thumbs.db
+.opencode/
+.venv/
+node_modules/

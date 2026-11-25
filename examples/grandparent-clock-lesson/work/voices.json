@@ -1,0 +1,29 @@
+{
+  "narrator": {
+    "elevenlabs": "ENV:ELEVENLABS_VOICE_ID",
+    "kokoro": "af_bella",
+    "speed": 1.0
+  },
+  "characters": {
+    "IVO": {
+      "elevenlabs": "ENV:ELEVENLABS_VOICE_ID_IVO",
+      "kokoro": "bm_george",
+      "speed": 0.9
+    },
+    "JUN": {
+      "elevenlabs": "ENV:ELEVENLABS_VOICE_ID_JUN",
+      "kokoro": "af_bella",
+      "speed": 1.0
+    },
+    "PELL": {
+      "elevenlabs": "ENV:ELEVENLABS_VOICE_ID_PELL",
+      "kokoro": "bf_emma",
+      "speed": 0.95
+    }
+  },
+  "pronouns": {
+    "he": "IVO",
+    "she": "PELL",
+    "i": "JUN"
+  }
+}

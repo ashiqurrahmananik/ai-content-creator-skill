@@ -1,0 +1,22 @@
+# Production brief
+
+- Slug: <lowercase-kebab-case>
+- Selected topic: <rank and title from the dated report>
+- Report: <path to ~/shorts/research/trends-YYYY-MM-DD.md>
+- Sources: <links + collection dates>
+- Original angle: <one paragraph>
+- Engine: <cartoon-audio-short | lemo-opuscar>
+- Style (lemo only): <exact gallery name>
+- Language: <voice and on-screen language>
+- Length: <seconds target>
+- Voice source: <user recording | auto ElevenLabs | auto Kokoro fallback>
+- Voiceover: <path supplied by user, then project path>
+- Voice cast: <work/voices.json path; narrator + dialogue speakers>
+- Real audio duration: <seconds from work/voice_duration.json, once generated>
+- Script (clean, for timing): <path to work/script.txt>
+- Script (ElevenLabs, `[ ]` tags only): <path to work/script_elevenlabs.txt>
+- Script (annotated, `[[[ ]]]` notes + tags): <path to work/script_full.txt>
+- Cast: <names used in [[[ ]]] notes, or "narrator only">
+- Captions: no (unless user asked)
+- Constraints: no real named people, no brand mascots/logos, no politics, no graphic content, voice never edited or re-timed, music/SFX at 50 % of voice
+- User decisions: <engine override, style override, storyboard review yes/no>
