@@ -17,6 +17,8 @@ jobs:
         run: |
           python -m py_compile opencode/skills/ai-content-creator/scripts/auto_voice.py
           python -m py_compile claude/skills/ai-content-creator/scripts/auto_voice.py
+      - name: Run auto_voice unit tests
+        run: python -B tests/test-auto-voice.py
       - name: Check required files
         run: |
           test -f README.md
