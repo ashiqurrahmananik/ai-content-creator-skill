@@ -3,6 +3,7 @@ __pycache__/
 *.mp3
 *.wav
 *.mp4
+# Finished showcase films under examples/ are tracked via `git add -f`.
 *.mov
 *.jpg
 *.jpeg

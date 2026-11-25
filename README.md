@@ -88,12 +88,17 @@ opencode/                       OpenCode skill, agent and slash command
 claude/                         Rebuilt Claude Code skill + CLAUDE.md
 examples/grandparent-clock-lesson/
                                 Brief, three script versions, cast map, treatment
+examples/the-flat-hero/         Finished 45 s landscape MP4, 60 fps
+examples/the-stick-of-destiny/  Finished 50 s landscape MP4, 24 fps
+examples/bag-bengali/           Finished 60 s vertical MP4, 30 fps, Bengali title
 docs/demo.gif                   10-second preview of a real finished film
 PUBLISH.md                      GitHub publish instructions
 CONTRIBUTING.md                 How to contribute
 ROADMAP.md                      Planned work
 LAUNCH.md                       Ready-to-post launch copy
 ```
+
+The three finished-film folders under `examples/` are tracked as binaries via `git add -f`, an intentional exception to the repo's `*.mp4` ignore rule. `grandparent-clock-lesson` stays text-only so it documents the inputs a film engine receives.
 
 ## Safety rules
 
