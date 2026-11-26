@@ -1,11 +1,13 @@
 """Auto-generate a voiceover for an ai-content-creator project.
 
-python auto_voice.py <project_dir> [--provider auto|elevenlabs|kokoro] [--preview N]
+python auto_voice.py <project_dir> [--provider auto|elevenlabs|kokoro] [--preview N] [--dry-run]
 
 Reads work/script_full.txt and work/voices.json. Narration uses the narrator voice;
 quoted dialogue is split out and spoken by a mapped character voice. Writes
 work/voice_segments.json, work/preview_voice.mp3 (preview) or voice.mp3 + work/voice_duration.json.
 ElevenLabs is used only when ELEVENLABS_API_KEY is set; otherwise Kokoro (offline) is used.
+--dry-run prints the parsed segments and resolved voices, then exits without calling
+any TTS provider or writing files.
 """
 import argparse, json, os, re, shutil, subprocess, sys, urllib.request
 from pathlib import Path
@@ -154,11 +156,22 @@ def duration_of(path):
     return round(float(text.strip()), 2)
 
 
+def print_dry_run(segments, cfg, provider):
+    """Print the segment plan without calling a provider or writing any file."""
+    print('auto_voice: dry run, provider %s, %d segments' % (provider, len(segments)))
+    for i, (text, speaker, emotions, lineno) in enumerate(segments, 1):
+        voice = voice_for(cfg, speaker, provider) or '(unset)'
+        tags = ''.join('[%s] ' % e for e in emotions)
+        print('%3d  line %-3d %-10s %-24s %s%s' % (i, lineno, speaker, voice, tags, text))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('project')
     ap.add_argument('--provider', choices=['auto', 'elevenlabs', 'kokoro'], default='auto')
     ap.add_argument('--preview', type=int, default=0, help='first N script lines only')
+    ap.add_argument('--dry-run', action='store_true',
+                    help='print parsed segments and resolved voices; no TTS calls, no files written')
     args = ap.parse_args()
     project, work = Path(args.project), Path(args.project) / 'work'
     cfg = load(work / 'voices.json')
@@ -168,6 +181,9 @@ def main():
     if not segments:
         sys.exit('auto_voice: no spoken lines found in script_full.txt')
     provider = choose_provider(args.provider, cfg, segments)
+    if args.dry_run:
+        print_dry_run(segments, cfg, provider)
+        return
     clips, gaps = {}, {}
     last_line = None
     for i, (_, _, _, lineno) in enumerate(segments, 1):

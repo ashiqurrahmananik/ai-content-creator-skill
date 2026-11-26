@@ -36,10 +36,12 @@ Written at Stage 2, alongside the three script files. Voice ids are never invent
 From the project folder, using the skill's helper:
 
 ```
+python "<ai-content-creator>/scripts/auto_voice.py" "<absolute project path>" --dry-run
 python "<ai-content-creator>/scripts/auto_voice.py" "<absolute project path>" --preview 3
 python "<ai-content-creator>/scripts/auto_voice.py" "<absolute project path>"
 ```
 
+- `--dry-run` prints each parsed segment (script line, speaker, resolved voice, emotion tags, text) for the provider that would be used, then exits. It calls neither ElevenLabs nor Kokoro and writes no files, so use it to review the cast map in `voices.json` before spending credits. It combines with `--preview N` and `--provider`.
 - `--preview N` generates only the first N script lines into `work/preview_voice.mp3`. **Always run the preview first and ask the user to approve it** before the full generation (ElevenLabs spends credits).
 - The full run writes `voice.mp3` and `voice.wav` at the project root, `work/voice_segments.json` (speaker/text/provider per segment) and `work/voice_duration.json` (real seconds from `ffprobe`).
 - The helper joins per-line clips with 0.06 s between segments of the same line and 0.18 s between lines. It does not change pitch, speed or level.
