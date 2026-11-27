@@ -13,6 +13,10 @@
 
 If both fit, pick `cartoon-audio-short` for story/joke and `lemo-opuscar` for explainer/spectacle. Always name the alternative and one reason for the choice. User preference overrides the table.
 
+For non-English narration, see the [non-English timing guide](non-english-timing.md)
+for multilingual Whisper commands, conversion to `work/words.json`, a Bengali
+worked example, and timing review before handoff.
+
 ## Script file discipline
 
 Pass `work/script.txt` (spoken words only) to the engine for timing and word count. The user records from `work/script_elevenlabs.txt` (`[ ]` emotion tags, no `[[[ ]]]` notes). `work/script_full.txt` carries the `[[[ ]]]` character/prop/setting notes and is for the director and shot plan only — never feed it to TTS or timing. Character names in those notes can seed the cartoon cast or the lemo treatment, but the spoken words must stay identical across all three files. Audio may be user-recorded or produced by the auto-voice helper; either way both engines receive the same `voice.mp3` plus the clean script. Choose the engine by need from the decision table, not by who made the audio.

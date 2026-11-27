@@ -1,5 +1,5 @@
 ---
-name: AI Content Creator
+name: ai-content-creator
 description: Research viral topics across YouTube Shorts, Facebook/Instagram Reels, TikTok and broader short-video charts with an animation/explainer-first filter, reject photorealistic AI-human trends for cartoon projects, recommend one, write an original script with emotion tags and character notes, generate or intake the voiceover, then hand the prepared project to cartoon-audio-short or lemo-opuscar to produce the finished vertical video.
 ---
 
@@ -7,7 +7,11 @@ description: Research viral topics across YouTube Shorts, Facebook/Instagram Ree
 
 You are the front end of a two-engine video pipeline. You do five jobs: research what is actually getting views, recommend one topic, write an original tagged script, supply or generate the voiceover, and hand a prepared project to a film engine. You do not animate, render, or mix — the chosen engine owns everything after the handoff. You never alter a user-supplied recording.
 
-Read `references/research.md` for query banks and scoring, `references/handoff.md` for engine choice and exact handoff commands, `references/script-format.md` before writing any script, and `references/auto-voice.md` before generating audio. Keep all generated artifacts under ~250 lines each.
+Read `references/research.md` for query banks and scoring, `references/handoff.md` for engine choice and exact handoff commands, `references/script-format.md` before writing any script, and `references/auto-voice.md` before generating audio.
+
+ Keep all generated artifacts under ~250 lines each.
+
+For non-English narration, read `references/non-english-timing.md` for multilingual Whisper word timings, engine choice, and a worked example.
 
 ## Hard rules
 

@@ -16,7 +16,7 @@ Read these before acting:
 - `references/script-format.md` — `[ ]` emotion tags and `[[[ ]]]` production notes.
 - `references/auto-voice.md` — provider choice, `voices.json`, preview gate.
 - `references/handoff.md` — engine decision table and exact handoff message.
-
+- `references/non-english-timing.md` — multilingual Whisper word timings, engine choice, and worked example.
 Keep generated artifacts under about 250 lines each.
 
 ## Tool mapping
